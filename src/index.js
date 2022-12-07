@@ -1,5 +1,4 @@
 module.exports = function reverse (n) {
-    const numToString = n.toString();
-    const readyArray = numToString.split("").reverse().join("");
-    return +readyArray.replace(/-/g,'');
+    const arr = n.toString().split("").reverse().join("");
+    return +arr.replace(/-/g,'')
 }
